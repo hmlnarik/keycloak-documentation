@@ -1,0 +1,19 @@
+language: java
+
+cache:
+  cache: false
+
+env:
+  global:
+    - MAVEN_SKIP_RC=true
+    - MAVEN_OPTS="-Xms512m -Xmx1536m"
+
+jdk:
+  - oraclejdk8
+
+install: true
+
+script: 
+  - mvn install
+
+sudo: false
